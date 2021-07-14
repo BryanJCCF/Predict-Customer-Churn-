@@ -138,7 +138,49 @@ TO-DO: Checar enlaces y ver
   <img src='./img/26.png' alt="Object Storage" width="80%">
   <img src='./img/27.png' alt="Object Storage" width="80%">
 </p>
-4. Continuar ejecutando los siguientes bloques de código y visualizar los resultados. 
+4. Continuar ejecutando los siguientes bloques de código y visualizar los resultados. Terminar de ejecutar todas las celdas del paso 2.0 y 3.0
 <p align="center">
   <img src='./img/28.png' alt="Object Storage" width="80%">
+  <img src='./img/29.png' alt="Object Storage" width="80%">
 </p>
+5. En el paso 4.0 se debe modificar el valor de la constante DEPLOYMENT_SPACE_NAME. Para esto, en la ventana del proyecto, dar click en el ícono de menú de hamburguesa del lado izquierdo para que muestre una lista de opciones. Dar click en "Espacios de Despliegue". 
+<p align="center">
+  <img src='./img/31.png' alt="Object Storage" width="80%">
+</p>
+6. Se abrirá la sección de "Despiegues". Dar click en "Nuevo Espacio de Despliegue"
+<p align="center">
+  <img src='./img/32.png' alt="Object Storage" width="80%">
+</p>
+7. Seleccionar un nombre para el espacio y dar click en "Crear"
+<p align="center">
+  <img src='./img/33.png' alt="Object Storage" width="80%">
+</p>
+8. Una vez que esté listo, dar click en "Ver nuevo espacio"
+<p align="center">
+  <img src='./img/34.png' alt="Object Storage" width="80%">
+</p>
+9. En el notebook, poner a la variable DEPLOYMENT_SPACE_NAME el valor del nombre de nuestro espacio de despliegue.
+<p align="center">
+  <img src='./img/35.png' alt="Object Storage" width="80%">
+</p>
+10. En la pestaña del espacio de despliegue. Dar click en "Gestionar" y copiar en un block de notas el valor de "Espacio GUID"
+<p align="center">
+  <img src='./img/36.png' alt="Object Storage" width="80%">
+</p>
+11. En el paso 4.1 se generará una API KEY. Dar click en el enlace y se abrirá una nueva pestaña.
+<p align="center">
+  <img src='./img/37.png' alt="Object Storage" width="80%">
+</p>
+12. En la nueva pestaña dar click en el botón azul para generar una nueva API KEY.
+<p align="center">
+  <img src='./img/38.png' alt="Object Storage" width="80%">
+</p>
+13. Elegir un nombre para la llave y dar click en "Crear"
+<p align="center">
+  <img src='./img/39.png' alt="Object Storage" width="80%">
+</p>
+14. Copiar en un block de notas la llave generada
+<p align="center">
+  <img src='./img/40.png' alt="Object Storage" width="80%">
+</p>
+15. 
