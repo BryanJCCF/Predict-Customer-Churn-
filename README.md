@@ -37,6 +37,7 @@ TO-DO: Checar enlaces y ver
 5. [Agregar Notebook y CSV al proyecto](#5-Agregar-notebook-y-papeles-al-proyecto)
 6. [Ejecutar el cuaderno](#6-Ejecutar-el-cuaderno)
 7. [Implementar el modelo con la interfaz de usuario de Cloud Pak for Data](#7-Implementar el modelo con la interfaz de usuario de Cloud Pak for Data)
+8. [Cree una aplicación Python Flask que use el modelo](#8-Cree una aplicación Python Flask que use el modelo)
 
 ### 1-Crear-una-instancia-object-storage
 1. En el catálogo buscar "Object Storage" y seleccionarlo.
@@ -238,7 +239,7 @@ TO-DO: Checar enlaces y ver
 <p align="center">
 <img src='./img/8ws.png' alt="Object Storage" width="80%">
 </p>
-9. Click en Despliegues/ seleccionamos el despliegue previamnete creado.
+9. Click en Despliegues/ seleccionamos el despliegue previamente creado.
 <p align="center">
 <img src='./img/9ws.png' alt="Object Storage" width="80%">
 </p>
@@ -246,8 +247,9 @@ TO-DO: Checar enlaces y ver
 <p align="center">
 <img src='./img/10ws.png' alt="Object Storage" width="80%">
 </p>
-11. Observamos las predicciones que nos genera la IA de Watson
+11. Observamos las predicciones que nos genera la IA de Watson.
 <p align="center">
 <img src='./img/11ws.PNG' alt="Object Storage" width="80%">
 </p>
 
+### 8. Cree una aplicación Python Flask que use el modelo
