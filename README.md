@@ -206,7 +206,7 @@ TO-DO: Checar enlaces y ver
   <img src='./img/47.png' alt="Object Storage" width="80%">
 </p>
 
-### 7-Implementar el modelo con la interfaz de usuario de Cloud Pak for Data
+### 7-Implementar-el-modelo-con-la-interfaz-de-usuario-de-Cloud-Pak-for-Data
 1. Click derecho sobre Predict Churn/ Abrir en nueva pestaña.
 <p align="center">
 <img src='./img/1ws.PNG' alt="Object Storage" width="80%">
@@ -252,4 +252,4 @@ TO-DO: Checar enlaces y ver
 <img src='./img/11ws.PNG' alt="Object Storage" width="80%">
 </p>
 
-### 8. Cree una aplicación Python Flask que use el modelo
+### 8-Cree-una-aplicación-Python-Flask-que-use-el-modelo
