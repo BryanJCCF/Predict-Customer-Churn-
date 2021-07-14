@@ -30,17 +30,49 @@ TO-DO: Checar enlaces y ver
 - Ingresamos el codigo y clic en "Apply"/"Aplicar".
 
 ## Contenido 
-1. [Crear un nuevo proyecto](#1-Crear-un-nuevo-proyecto)
-1. [Crear un espacio para implementaciones de aprendizaje automático](#2-Crear-un-espacio-para-implementaciones-de-aprendizaje-automático)
-1. [Cargue el conjunto de datos](#3-Cargar-the-dataset)
-1. [Importar cuaderno a Cloud Pak for Data](#4-Importar-notebook-a-cloud-pak-for-data)
-1. [Ejecutar el cuaderno](#5-Ejecutar-el-cuaderno)
-1. [Implementación del modelo mediante la interfaz de usuario de Cloud Pak for Data](#6-Implementación-del-modelo-usando-la-interfaz-de-usuario-de-datos-del-paquete-en-la-nube)
-1. [Probando el modelo](#7-Probando-el-modelo)
-1. [Cree una aplicación Python Flask que use el modelo](#8-Crear-un-python-flask-app-que-use-el-modelo)
+1. [Crear una instancia de Object Storage](#1-Crear-una-instancia-object-storage)
+2. [Crear una instancia de Machine Learning](#2-Crear-una-instancia-machine-learning)
+3. [Crear una instancia de Watson Studio](#3-Crear-una-instancia-watson-studio)
+4. [Crear un espacio para implementaciones de aprendizaje automático](#2-Crear-un-espacio-para-implementaciones-de-aprendizaje-automático)
+5. [Cargue el conjunto de datos](#3-Cargar-the-dataset)
+6. [Importar cuaderno a Cloud Pak for Data](#4-Importar-notebook-a-cloud-pak-for-data)
+7. [Ejecutar el cuaderno](#5-Ejecutar-el-cuaderno)
+8. [Implementación del modelo mediante la interfaz de usuario de Cloud Pak for Data](#6-Implementación-del-modelo-usando-la-interfaz-de-usuario-de-datos-del-paquete-en-la-nube)
+9. [Probando el modelo](#7-Probando-el-modelo)
+10. [Cree una aplicación Python Flask que use el modelo](#8-Crear-un-python-flask-app-que-use-el-modelo)
 
-### 1-Crear-un-nuevo-proyecto
-### 2-Crear-un-espacio-para-implementaciones-de-aprendizaje-automático
+### 1-Crear-una-instancia-object-storage
+1. En el catálogo buscar "Object Storage" y seleccionarlo.
+<p align="center">
+  <img src='./img/1.png' alt="Object Storage" width="80%">
+</p>
+2. Crear el servicio. Seleccionar el plan gratuito "Lite". Dar scroll hacia abajo y elegir un nombre para el servicio. Dar click en "Crear".
+<p align="center">
+  <img src='./img/2.png' alt="Object Storage" width="80%">
+  <img src='./img/3.png' alt="Object Storage" width="80%">
+</p>
+
+### 2-Crear-una-instancia-machine-learning
+1. En el catálogo buscar "Machine Learning" y seleccionarlo.
+<p align="center">
+  <img src='./img/4.png' alt="Object Storage" width="80%">
+</p>
+2. Crear el servicio. Seleccionar el plan gratuito "Lite". Dar scroll hacia abajo y elegir un nombre para el servicio. Dar click en "Crear".
+<p align="center">
+  <img src='./img/5.png' alt="Object Storage" width="80%">
+  <img src='./img/6.png' alt="Object Storage" width="80%">
+</p>
+
+### 3-Crear-una-instancia-watson-studio
+1. En el catálogo buscar "Watson Studio" y seleccionarlo.
+<p align="center">
+  <img src='./img/7.png' alt="Object Storage" width="80%">
+</p>
+2. Crear el servicio. Seleccionar el plan gratuito "Lite". Dar scroll hacia abajo y elegir un nombre para el servicio. Dar click en "Crear".
+<p align="center">
+  <img src='./img/8.png' alt="Object Storage" width="80%">
+  <img src='./img/9.png' alt="Object Storage" width="80%">
+</p>
 ### 3-Cargar-the-dataset
 ### 4-Importar-notebook-a-cloud-pak-for-data
 ### 5-Ejecutar-el-cuaderno
