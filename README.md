@@ -36,6 +36,7 @@ TO-DO: Checar enlaces y ver
 4. [Crear un proyecto en watson studio](#4-Crear-proyecto-en-watson-studio)
 5. [Agregar Notebook y CSV al proyecto](#5-Agregar-notebook-y-papeles-al-proyecto)
 6. [Ejecutar el cuaderno](#6-Ejecutar-el-cuaderno)
+7. [Implementar el modelo con la interfaz de usuario de Cloud Pak for Data](#7-Implementar el modelo con la interfaz de usuario de Cloud Pak for Data)
 
 ### 1-Crear-una-instancia-object-storage
 1. En el catálogo buscar "Object Storage" y seleccionarlo.
@@ -203,3 +204,17 @@ TO-DO: Checar enlaces y ver
 <p align="center">
   <img src='./img/47.png' alt="Object Storage" width="80%">
 </p>
+
+### 7-Implementar el modelo con la interfaz de usuario de Cloud Pak for Data
+<img src='./img/1ws.png' alt="Object Storage" width="80%">
+<img src='./img/2ws.png' alt="Object Storage" width="80%">
+<img src='./img/3ws.png' alt="Object Storage" width="80%">
+<img src='./img/4ws.png' alt="Object Storage" width="80%">
+<img src='./img/5ws.png' alt="Object Storage" width="80%">
+<img src='./img/6ws.png' alt="Object Storage" width="80%">
+<img src='./img/7ws.png' alt="Object Storage" width="80%">
+<img src='./img/8ws.png' alt="Object Storage" width="80%">
+<img src='./img/9ws.png' alt="Object Storage" width="80%">
+<img src='./img/10ws.png' alt="Object Storage" width="80%">
+<img src='./img/11ws.PNG' alt="Object Storage" width="80%">
+
