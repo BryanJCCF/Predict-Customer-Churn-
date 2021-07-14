@@ -206,15 +206,48 @@ TO-DO: Checar enlaces y ver
 </p>
 
 ### 7-Implementar el modelo con la interfaz de usuario de Cloud Pak for Data
+1. Click derecho sobre Predict Churn/ Abrir en nueva pestaña.
+<p align="center">
 <img src='./img/1ws.PNG' alt="Object Storage" width="80%">
+</p>
+2. Click sobre configuración.
+<p align="center">
 <img src='./img/2ws.PNG' alt="Object Storage" width="80%">
+</p>
+3. Añadir servicio. 
+<p align="center"> 
 <img src='./img/3ws.png' alt="Object Storage" width="80%">
+</p>
+4. Seleccionamos el servicio que creamos previamente y le damos a Asociar servicio.
+<p align="center">
 <img src='./img/4ws.png' alt="Object Storage" width="80%">
+</p>
+5. Click sobre el menu de hamburguesa de la derecha/Proyectos/Seleccionamos el proyecto previamente creado
+<p align="center">
 <img src='./img/5ws.png' alt="Object Storage" width="80%">
+</p>
+6. Damos click en Gestionar/ Abajo del lado derecho sobre Servicio de aprendizaje maquina(Machine Learning) seleccionamos Asociar instancia +/ Selccionamos Watson Studio / Seleccionamos nuestro proyecto.
+<p align="center">
 <img src='./img/6ws.png' alt="Object Storage" width="80%">
+</p>
+7.Seleccionamos nuestro Proyecto.
+<p align="center">
 <img src='./img/7ws.png' alt="Object Storage" width="80%">
+</p>
+8. Seleccionamos En linea y colocamos nombre/ Click en crear.
+<p align="center">
 <img src='./img/8ws.png' alt="Object Storage" width="80%">
+</p>
+9. Click en Despliegues/ seleccionamos el despliegue previamnete creado.
+<p align="center">
 <img src='./img/9ws.png' alt="Object Storage" width="80%">
+</p>
+10. En la carpeta data esta el Archivo Datos_JSON.txt, dentro de el copiamos el contenido y lo pegamos sustituyendo el contenido de Cuerpo / Click en Predecir. 
+<p align="center">
 <img src='./img/10ws.png' alt="Object Storage" width="80%">
+</p>
+11. Observamos las predicciones que nos genera la IA de Watson
+<p align="center">
 <img src='./img/11ws.PNG' alt="Object Storage" width="80%">
+</p>
 
