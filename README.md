@@ -253,3 +253,99 @@ TO-DO: Checar enlaces y ver
 </p>
 
 ### 8-Cree-una-aplicación-Python-Flask-que-use-el-modelo
+Ahora que el modelo está implementado, también podemos probarlo desde aplicaciones externas. Una forma de invocar la API del modelo es utilizando el comando cURL.
+
+> NOTA: Los usuarios de Windows necesitarán el comando *cURL*. Se recomienda [descargar gitbash](https://gitforwindows.org/) para esto, ya que también tendrá otras herramientas y podrá usar fácilmente las variables de entorno de shell en los siguientes pasos. También tenga en cuenta que si no está utilizando gitbash, es posible que deba cambiar los comandos *export* a *establecer* comandos.
+
+- En una ventana de terminal (o símbolo del sistema en Windows), ejecute el siguiente comando para obtener un token para acceder a la API. Use su clúster de Cloud Pak for Data `User name` y` password`:
+
+```bash
+curl -k -X GET https://<cluster-url>/v1/preauth/validateAuth -u <username>:<password>
+```
+- Se devolverá una cadena json con un valor para "accessToken" que se verá *similar* a esto:
+
+```json
+{"username":"snyk","role":"Admin","permissions":["access_catalog","administrator","manage_catalog","can_provision"],"sub":"snyk","iss":"KNOXSSO","aud":"DSX","uid":"1000331002","authenticator":"default","accessToken":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNueWstYWRtaW4iLCJyb2xlIjoiQWRtaW4iLCJwZXJtaXNzaW9ucyI6WyJhZG1pbmlzdHJhdG9yIiwiY2FuX3Byb3Zpc2lvbiIsIm1hbmFnZV9jYXRhbG9nIiwibWFuYWdlX3F1YWxpdHkiLCJtYW5hZ2VfaW5mb3JtYXRpb25fYXNzZXRzIiwibWFuYWdlX2Rpc2NvdmVyeSIsIm1hbmFnZV9tZXRhZGF0YV9pbXBvcnQiLCJtYW5hZ2VfZ292ZXJuYW5jZV93b3JrZmxvdyIsIm1hbmFnZV9jYXRlZ29yaWVzIiwiYXV0aG9yX2dvdmVycmFuY2VfYXJ0aWZhY3RzIiwiYWNjZXNzX2NhdGFsb2ciLCJhY2Nlc3NfaW5mb3JtYXRpb25fYXNzZXRzIiwidmlld19xdWFsaXR5Iiwic2lnbl9pbl9vbmx5Il0sInN1YiI6InNueWstYWRtaW4iLCJpc3MiOiJLTk9YU1NPIiwiYXVkIjoiRFNYIiwidWlkIjoiMTAwMDMzMTAwMiIsImF1dGhlbnRpY2F0b3IiOiJkZWZhdWx0IiwiaWp0IjoxNTkyOTI3MjcxLCJleHAiOjE1OTI5NzA0MzV9.MExzML-45SAWhrAK6FQG5gKAYAseqdCpublw3-OpB5OsdKJ7isMqXonRpHE7N7afiwU0XNrylbWZYc8CXDP5oiTLF79zVX3LAWlgsf7_E2gwTQYGedTpmPOJgtk6YBSYIB7kHHMYSflfNSRzpF05JdRIacz7LNofsXAd94Xv9n1T-Rxio2TVQ4d91viN9kTZPTKGOluLYsRyMEtdN28yjn_cvjH_vg86IYUwVeQOSdI97GHLwmrGypT4WuiytXRoQiiNc-asFp4h1JwEYkU97ailr1unH8NAKZtwZ7-yy1BPDOLeaR5Sq6mYNIICyXHsnB_sAxRIL3lbBN87De4zAg","_messageCode_":"success","message":"success"}
+```
+
+- Utilice el comando de exportación para guardar la parte "accessToken" de esta respuesta en la ventana del terminal en una variable llamada `WML_AUTH_TOKEN`.
+
+```bash
+export WML_AUTH_TOKEN=<value-of-access-token>
+```
+Inicialice un entorno virtual con [`venv`] (https://docs.python.org/3/tutorial/venv.html).
+
+```bash
+#Crea el entorno virtual con Python. 
+# Tenga en cuenta que puede llamarse python3 en su sistema.
+python -m venv venv       # Python 3.X
+
+# Obtenga el entorno virtual. Utilice uno de los dos comandos según su sistema operativo.
+source venv/bin/activate  # Mac or Linux
+./venv/Scripts/activate   # Windows PowerShell
+```
+Finalmente, instale los requisitos de Python.
+
+```bash
+pip install -r requirements.txt
+```
+Es una buena práctica almacenar información configurable como variables de entorno, en lugar de codificar cualquier información importante. Para hacer referencia a nuestro modelo y proporcionar una clave API, pasaremos estos valores a través de un archivo que se lee; los pares clave-valor de este archivo se almacenan como variables de entorno.
+
+Copie el archivo `env.sample` a` .env`.
+
+
+```bash
+cp env.sample .env
+```
+Edite el archivo .env y complete el `MODEL_URL` así como el` AUTH_URL`, `AUTH_USERNAME` y` AUTH_PASSWORD`.
+
+* `MODEL_URL` es la URL de su servicio web para la puntuación que obtuvo en la sección anterior
+* `AUTH_URL` es la URL previa a la autorización de su CloudPak4Data y se verá así: https://<cluster_url>/v1/preauth/validateAuth
+* `AUTH_USERNAME` es su nombre de usuario con el que inicia sesión en el entorno CloudPak4Data
+* `AUTH_PASSWORD` es su contraseña con la que inicia sesión en el entorno CloudPak4Data
+
+> **NOTA** : Alternativamente, puede completar AUTH_TOKEN en lugar de AUTH_URL, AUTH_USERNAME y AUTH_PASSWORD. Habrá generado este token en la sección anterior. Sin embargo, dado que los tokens caducan después de unas horas y necesitaría reiniciar su aplicación para actualizar el token, no se sugiere esta opción. En cambio, si usa la opción de nombre de usuario / contraseña, la aplicación puede generar un nuevo token cada vez para usted, por lo que siempre usará un token no vencido.
+
+``` bash
+# Copie este archivo a .env.
+# Edite el archivo .env con la configuración requerida antes de iniciar la aplicación.
+
+# 1. Obligatorio: proporcione la URL de su servicio web para la puntuación.
+# Por ejemplo, MODEL_URL = https: // <cluster_url> / v4 / deployments / <deployment_space_guid> / predictions
+MODEL_URL =
+
+
+# 2. Obligatorio: complete la sección A O B a continuación:
+
+#### A: Autenticación mediante nombre de usuario y contraseña
+#Complete la URL de autenticación, su nombre de usuario de CloudPak4Data y la contraseña de CloudPak4Data.
+#  Ejemplo:
+#AUTH_URL=<cluster_url>/v1/preauth/validateAuth
+#AUTH_USERNAME=my_username
+#AUTH_PASSWORD=super_complex_password
+AUTH_URL=
+AUTH_USERNAME=
+AUTH_PASSWORD=
+
+#### B:(avanzado) Proporciona tu token de portador.
+#Descomente el "AUTH_TOKEN =" a continuación y complete su token de portador.
+#Puede generar este token siguiendo las instrucciones del laboratorio. Este token debe comenzar con "Bearer".
+#Nota: estos tokens caducarán después de unas horas, por lo que deberá generar uno nuevo más tarde.
+#  Ejemplo:
+#TOKEN = Portador abCdwFghIjKLMnO1PqRsTuV2wWX3YzaBCDE4.fgH1r2 ... (y así sucesivamente, los tokens son largos).
+#AUTH_TOKEN =
+
+
+#Opcional: aquí puede anular el host y el puerto del servidor.
+ANFITRIÓN = 127.0.0.1
+PUERTO = 5000
+```
+Inicie el servidor de flask ejecutando el siguiente comando:
+
+`` bash
+python telcochurn.py
+''
+
+Usa tu navegador para ir a [http://127.0.0.1:5000](http://127.0.0.1:5000) y pruébalo.
+
+> **SUGERENCIA**: Use `ctrl` +` c` para detener el servidor Flask cuando haya terminado.
