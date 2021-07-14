@@ -36,8 +36,8 @@ TO-DO: Checar enlaces y ver
 4. [Crear un proyecto en watson studio](#4-Crear-proyecto-en-watson-studio)
 5. [Agregar Notebook y CSV al proyecto](#5-Agregar-notebook-y-papeles-al-proyecto)
 6. [Ejecutar el cuaderno](#6-Ejecutar-el-cuaderno)
-7. [Implementar el modelo con la interfaz de usuario de Cloud Pak for Data](#7-Implementar el modelo con la interfaz de usuario de Cloud Pak for Data)
-8. [Cree una aplicación Python Flask que use el modelo](#8-Cree una aplicación Python Flask que use el modelo)
+7. [Implementar el modelo con la interfaz de usuario de Cloud Pak for Data](#7-Implementar-el-modelo-con-la-interfaz-de-usuario-de-Cloud-Pak-for-Data)
+8. [Cree una aplicación Python Flask que use el modelo](#8-Cree-una-aplicación-Python-Flask-que-use-el-modelo)
 
 ### 1-Crear-una-instancia-object-storage
 1. En el catálogo buscar "Object Storage" y seleccionarlo.
