@@ -179,8 +179,27 @@ TO-DO: Checar enlaces y ver
 <p align="center">
   <img src='./img/39.png' alt="Object Storage" width="80%">
 </p>
-14. Copiar en un block de notas la llave generada
+14. Copiar en un block de notas la llave generada (la necesitaremos más adelante)
 <p align="center">
   <img src='./img/40.png' alt="Object Storage" width="80%">
 </p>
-15. 
+15. En el notebook vamos a copiar lo que aparece seleccionado en la imagen y lo copiarlo en una línea de comandos.
+<p align="center">
+  <img src='./img/41.png' alt="Object Storage" width="80%">
+</p>
+16. Sustituir API_KEY por la llave que copiamos anteriormente en el block de notas. 
+<p align="center">
+  <img src='./img/42.png' alt="Object Storage" width="80%">
+</p>
+17. La consola nos va a devolver un valor de access_token. Este valor copiarlo.
+<p align="center">
+  <img src='./img/43.png' alt="Object Storage" width="80%">
+</p>
+18. Copiar ese access token donde dice "toke" en el notebook y posteriormente dar click en "RUN" para ejecutar la celda.
+<p align="center">
+  <img src='./img/44.png' alt="Object Storage" width="80%">
+</p>
+19. Seguir ejecutanto las celdas hasta llegar al final del notebook.
+<p align="center">
+  <img src='./img/47.png' alt="Object Storage" width="80%">
+</p>
