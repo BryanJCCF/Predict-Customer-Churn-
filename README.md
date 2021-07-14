@@ -33,7 +33,7 @@ TO-DO: Checar enlaces y ver
 1. [Crear una instancia de Object Storage](#1-Crear-una-instancia-object-storage)
 2. [Crear una instancia de Machine Learning](#2-Crear-una-instancia-machine-learning)
 3. [Crear una instancia de Watson Studio](#3-Crear-una-instancia-watson-studio)
-4. [Crear un espacio para implementaciones de aprendizaje automático](#2-Crear-un-espacio-para-implementaciones-de-aprendizaje-automático)
+4. [Crear un proyecto en watson studio](#4-Crear-proyecto-en-watson-studio)
 5. [Cargue el conjunto de datos](#3-Cargar-the-dataset)
 6. [Importar cuaderno a Cloud Pak for Data](#4-Importar-notebook-a-cloud-pak-for-data)
 7. [Ejecutar el cuaderno](#5-Ejecutar-el-cuaderno)
@@ -73,7 +73,25 @@ TO-DO: Checar enlaces y ver
   <img src='./img/8.png' alt="Object Storage" width="80%">
   <img src='./img/9.png' alt="Object Storage" width="80%">
 </p>
-### 3-Cargar-the-dataset
+
+### 4-Crear-proyecto-en-watson-studio
+1. Una vez creada la instancia, se abrirá el servicio creado. Dar click en "Iniciación"
+<p align="center">
+  <img src='./img/10.png' alt="Object Storage" width="80%">
+</p>
+2. Se abrirá una nueva pestaña. Dar click en "Crear proyecto".
+<p align="center">
+  <img src='./img/11.png' alt="Object Storage" width="80%">
+</p>
+3. Seleccionar "Crear un proyecto vacío".
+<p align="center">
+  <img src='./img/12.png' alt="Object Storage" width="80%">
+</p>
+4. Elegir el nombre del proyecto. En almacenamiento debe aparecer el nombre de la instancia que se creo de Object Storage (si es la única que se tiene en la cuenta), si no aparece, elegirla. Dar click en "Crear" 
+<p align="center">
+  <img src='./img/13.png' alt="Object Storage" width="80%">
+</p>
+
 ### 4-Importar-notebook-a-cloud-pak-for-data
 ### 5-Ejecutar-el-cuaderno
 ### 6-Implementación-del-modelo-usando-la-interfaz-de-usuario-de-datos-del-paquete-en-la-nube
