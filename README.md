@@ -123,4 +123,22 @@ TO-DO: Checar enlaces y ver
 </p>
 
 ### 6-Ejecutar-el-cuaderno
-
+1. En la pestaña donde tenemos abierto nuestro notebook. Dar click en el ícono de tres puntos" y dar click en "Insertar señal del proyecto". Automáticamente se agregara un pedazo de código hasta arriba. Dar click en "Run" a esa sección de código.
+<p align="center">
+  <img src='./img/22.png' alt="Object Storage" width="80%">
+</p>
+2. Continuar seleccionando los bloques de código y dar click en "Run" para que se ejecuten. Continuar con hasta terminar el paso 1.0.
+<p align="center">
+  <img src='./img/23.png' alt="Object Storage" width="80%">
+  <img src='./img/24.png' alt="Object Storage" width="80%">
+</p>
+3. En el paso 2.0, seleccionar dar click abajo de donde dice "Insertar código de Pandas". Dar click en el ícono de circulitos (2) y donde dice "Insertar Código", seleccionar "pandas DataFrame". Automáticamente se agregará un pedazo de código, una vez agregado, dar click en "Run". Se mostrará una tabla.
+<p align="center">
+  <img src='./img/25.png' alt="Object Storage" width="80%">
+  <img src='./img/26.png' alt="Object Storage" width="80%">
+  <img src='./img/27.png' alt="Object Storage" width="80%">
+</p>
+4. Continuar ejecutando los siguientes bloques de código y visualizar los resultados. 
+<p align="center">
+  <img src='./img/28.png' alt="Object Storage" width="80%">
+</p>
