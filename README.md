@@ -195,7 +195,7 @@ TO-DO: Checar enlaces y ver
 <p align="center">
   <img src='./img/43.png' alt="Object Storage" width="80%">
 </p>
-18. Copiar ese access token donde dice "toke" en el notebook y posteriormente dar click en "RUN" para ejecutar la celda.
+18. Copiar ese access token donde dice "token" en el notebook y posteriormente dar click en "RUN" para ejecutar la celda.
 <p align="center">
   <img src='./img/44.png' alt="Object Storage" width="80%">
 </p>
