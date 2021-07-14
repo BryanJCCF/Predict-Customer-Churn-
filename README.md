@@ -34,12 +34,8 @@ TO-DO: Checar enlaces y ver
 2. [Crear una instancia de Machine Learning](#2-Crear-una-instancia-machine-learning)
 3. [Crear una instancia de Watson Studio](#3-Crear-una-instancia-watson-studio)
 4. [Crear un proyecto en watson studio](#4-Crear-proyecto-en-watson-studio)
-5. [Cargue el conjunto de datos](#3-Cargar-the-dataset)
-6. [Importar cuaderno a Cloud Pak for Data](#4-Importar-notebook-a-cloud-pak-for-data)
-7. [Ejecutar el cuaderno](#5-Ejecutar-el-cuaderno)
-8. [Implementación del modelo mediante la interfaz de usuario de Cloud Pak for Data](#6-Implementación-del-modelo-usando-la-interfaz-de-usuario-de-datos-del-paquete-en-la-nube)
-9. [Probando el modelo](#7-Probando-el-modelo)
-10. [Cree una aplicación Python Flask que use el modelo](#8-Crear-un-python-flask-app-que-use-el-modelo)
+5. [Agregar Notebook y CSV al proyecto](#5-Agregar-notebook-y-papeles-al-proyecto)
+6. [Ejecutar el cuaderno](#6-Ejecutar-el-cuaderno)
 
 ### 1-Crear-una-instancia-object-storage
 1. En el catálogo buscar "Object Storage" y seleccionarlo.
@@ -92,8 +88,39 @@ TO-DO: Checar enlaces y ver
   <img src='./img/13.png' alt="Object Storage" width="80%">
 </p>
 
-### 4-Importar-notebook-a-cloud-pak-for-data
-### 5-Ejecutar-el-cuaderno
-### 6-Implementación-del-modelo-usando-la-interfaz-de-usuario-de-datos-del-paquete-en-la-nube
-### 7-Probando-el-modelo
-### 8-Crear-un-python-flask-app-que-use-el-modelo
+### 5-Agregar-notebook-y-papeles-al-proyecto
+1. En el proyecto abierto, dar click en "Añadir al proyecto" para agregar el notebook. Se abre un modal y dar click en "Notebook".
+<p align="center">
+  <img src='./img/14.png' alt="Object Storage" width="80%">
+</p>
+<p align="center">
+  <img src='./img/15.png' alt="Object Storage" width="80%">
+</p>            
+
+2. Se abre la ventana de Nuevo Notebook. Seleccionar el tab "Desde URL". Elegir un nombre para el notebook e insertar la URL del notebook que esta en ese repositorio. Dar click en "Crear"
+<p align="center">
+  <img src='./img/16.png' alt="Object Storage" width="80%">
+</p>
+3. Automáticamente se abrirá el notebook pero se debe agregar otro archivo es por eso que hay que dar click derecho en "prediction-workshop" y seleccionar "Abrir nueva pestaña" para abrir otra tab y agregar un csv.
+<p align="center">
+  <img src='./img/17.png' alt="Object Storage" width="80%">
+</p>
+4. En la nueva pestaña del navegador. Dar click en "Activos"(1). Dar click en el botón del lado derecho de circulitos(2). Subir el csv "Telco-Customer-Churn.csv" que se podrá descargar desde este mismo repositorio en la carpeta "Data"(3).
+<p align="center">
+  <img src='./img/18.png' alt="Object Storage" width="80%">
+</p>
+5. Verificar que se ha cargado correctamente el archivo. Debe aparecer en la tabla de "Activos de Datos". 
+<p align="center">
+  <img src='./img/19.png' alt="Object Storage" width="80%">
+</p>
+6. En la misma ventana del proyecto dar scroll hacia abajo para llegar a la sección "Señales de Acceso". Dar click en "Nueva señal"(1). Se abrirá un modal. Asignar un nombre a la señar y elegir el rol de "Editor". Dar click en "Crear".
+<p align="center">
+  <img src='./img/20.png' alt="Object Storage" width="80%">
+</p>
+7. En la misma ventana ir a la tabla de "Notebooks". En la fila del notebook que agregamos dar click en el candado. Aparecerá un modal. Dar click en "Desbloquear".
+<p align="center">
+  <img src='./img/21.png' alt="Object Storage" width="80%">
+</p>
+
+### 6-Ejecutar-el-cuaderno
+
