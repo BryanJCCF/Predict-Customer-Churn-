@@ -206,8 +206,8 @@ TO-DO: Checar enlaces y ver
 </p>
 
 ### 7-Implementar el modelo con la interfaz de usuario de Cloud Pak for Data
-<img src='./img/1ws.png' alt="Object Storage" width="80%">
-<img src='./img/2ws.png' alt="Object Storage" width="80%">
+<img src='./img/1ws.PNG' alt="Object Storage" width="80%">
+<img src='./img/2ws.PNG' alt="Object Storage" width="80%">
 <img src='./img/3ws.png' alt="Object Storage" width="80%">
 <img src='./img/4ws.png' alt="Object Storage" width="80%">
 <img src='./img/5ws.png' alt="Object Storage" width="80%">
