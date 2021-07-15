@@ -1,0 +1,50 @@
+{
+   "input_data":[
+      {
+         "fields":[
+            "gender",
+            "SeniorCitizen",
+            "Partner",
+            "Dependents",
+            "tenure",
+            "PhoneService",
+            "MultipleLines",
+            "InternetService",
+            "OnlineSecurity",
+            "OnlineBackup",
+            "DeviceProtection",
+            "TechSupport",
+            "StreamingTV",
+            "StreamingMovies",
+            "Contract",
+            "PaperlessBilling",
+            "PaymentMethod",
+            "MonthlyCharges",
+            "TotalCharges"
+         ],
+         "values":[
+            [
+               "Female",
+               0,
+               "No",
+               "No",
+               1,
+               "No",
+               "No phone service",
+               "DSL",
+               "No",
+               "No",
+               "No",
+               "No",
+               "No",
+               "No",
+               "Month-to-month",
+               "No",
+               "Bank transfer (automatic)",
+               25.25,
+               25.25
+            ]
+         ]
+      }
+   ]
+}
